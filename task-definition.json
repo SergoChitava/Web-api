@@ -1,4 +1,5 @@
 - name: Download task definition
   run: |
-    aws ecs describe-task-definition --task-definition task-def --query taskDefinition > task-definition.json
+    aws ecs describe-task-definition --task-definition task-def --query 'taskDefinition' > task-definition.json
+
 
